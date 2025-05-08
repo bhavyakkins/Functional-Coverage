@@ -6,7 +6,7 @@ What is FC?
     Without FC it is difficult to keep track of the project status.
     It doesn’t tell whether the feature is working or not, it only tells that feature has been checked as part of the test cases.
 
-How FC gets transactions
+How FC gets transactions?
 
     Monitor monitors the interface for valid txs and collects them.
     It puts transactions into mailbox connected with FC.
