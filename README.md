@@ -55,10 +55,7 @@ Bins RD_BIN = {0};
     Ignore bin IG_RD_BIN={1};
     }
 
-    Wildcard Bins:
-
-◦Bins are declared using wildcard keyword
-◦We use this bin when we want to write X or Z or ? During bins declaration.
+    Wildcard Bins:Bins are declared using wildcard keyword, We use this bin when we want to write X or Z or ? During bins declaration.
 ◦Example:
 Coverpoint a{
 Wildcard bins b1=(2’b0X => 2’b1X)
@@ -66,18 +63,13 @@ Wildcard bins b1=(2’b0X => 2’b1X)
 B1 is set to be hit whenever anyone of below transition happens
 01 -> 10, 00 -> 11, 01 -> 11, 00 -> 10
 
-    Cross Coverage:
-
-◦It will have cross product between two or more cover points within the same cover group.
+    Cross Coverage: It will have cross product between two or more cover points within the same cover group.
 ◦Example:
 WR_RD_CP_X_ADDR_CP:cross WR_RD_CP,ADDR_CP;
 
 WR_RD_CP and ADDR_CP are two cover points. Cross product of these cover points gives the cross coverage.
 
-    Cross Coverage With Intersect:
-
-◦Analysing more number of bins is a difficult task, for easier analysis we want to minimize them into smaller number of bins.
-◦Intersect will help us to group a specific set of values into a single bin.
+    Cross Coverage With Intersect: Analysing more number of bins is a difficult task, for easier analysis we want to minimize them into smaller number of bins. Intersect will help us to group a specific set of values into a single bin.
 ◦ Example:
 A_CP:coverpoint a{
 bins A0 = {0};
